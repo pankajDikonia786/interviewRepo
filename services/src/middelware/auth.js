@@ -34,7 +34,7 @@ const authorize = () => {
                 }
             });
         } catch (error) {
-            console.error("Error in authorize middleware:", error);
+            console.error("Error in authorize middelwares:", error);
             return res.status(500).json({
                 success: false,
                 message: "Internal server error"
