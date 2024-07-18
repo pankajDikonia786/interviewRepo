@@ -1,0 +1,21 @@
+const express =require("express")
+const app = express()
+// const cors =require("cors")
+var cors = require('cors')
+require("dotenv").config()
+const path =require("path")
+var morgan =require("morgan")
+app.use(express.static(path.join(__dirname, 'public')))
+
+const userRouter =require("./services/src/routers/userRoutes.js")
+const dbConnection =require("./services/src/config/index.js")
+
+dbConnection()
+// app.use(morgan())
+app.use(express.json())
+// app.use(cors)
+app.use(express.urlencoded({extended:true}))
+app.use(userRouter)
+app.listen(3000,()=>{
+    console.log(`server is listen on the port `)
+})
