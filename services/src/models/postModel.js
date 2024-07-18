@@ -22,7 +22,7 @@ const postShema =mongoose.Schema({
 },
 {
     timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
-  })
+})
 
 const Post =mongoose.model('post',postShema)
 module.exports =Post
