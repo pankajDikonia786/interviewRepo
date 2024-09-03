@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "welcome",
+    "database": "conserve_local",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+
+
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "vC*6N5dE$CtP",
+    "database": "conserve-dev-db",
+    "host": "conserve-dev-db.c4iakth3csoa.ap-southeast-2.rds.amazonaws.com",
+    "dialect": "postgres"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Backend Docs",
+    "contact": {},
+    "version": "1.0"
+  },
+  "servers": [],
+  "paths": {},
+  "components": {},
+  "security": [],
+  "tags": []
+}
